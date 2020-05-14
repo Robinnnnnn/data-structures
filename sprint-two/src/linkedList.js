@@ -1,4 +1,5 @@
 var LinkedList = function() {
+  //remote working
   var list = {};
   list.head = null;
   list.tail = null;
