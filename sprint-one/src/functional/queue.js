@@ -12,6 +12,7 @@ var Queue = function() {
   someInstance.enqueue = function(value) {
     storage[firstIn] = value;
     firstIn += 1;
+    //storage[firstIn++]
     return value;
   };
 
@@ -24,6 +25,7 @@ var Queue = function() {
 
   someInstance.size = function() {
     return Object.keys(storage).length;
+    //could have returned end - start;
   };
 
   return someInstance;
