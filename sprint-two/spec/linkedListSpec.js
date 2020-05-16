@@ -52,4 +52,15 @@ describe('linkedList', function() {
   });
 
   // add more tests here to test the functionality of linkedList
+
+  it('should be able to add a value in the middle', function() {
+    linkedList.addToTail(4);
+    linkedList.addToTail(5);
+    linkedList.addToMiddle(1, 3);
+    expect(linkedList.contains(3)).to.equal(true);
+  });
+
+
+
+
 });
